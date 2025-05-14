@@ -8,6 +8,7 @@
     :root {
       --sand: #CBBD93;
       --text: #111;
+      --accent: #1e1e1e;
     }
 
     * {
@@ -24,17 +25,31 @@
     }
 
     header {
-      padding: 3rem 2rem;
+      padding: 3rem 2rem 1rem;
       text-align: center;
       animation: fadeIn 1s ease-out;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: bold;
     }
 
     header p {
       font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: var(--accent);
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 1rem auto;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border: 2px solid #333;
     }
 
     section {
@@ -44,14 +59,15 @@
       animation: slideUp 1s ease-out;
     }
 
-    .experience {
-      margin-bottom: 2rem;
+    h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
 
-    .experience img {
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
+    .experience {
+      margin-bottom: 2.5rem;
     }
 
     .experience h3 {
@@ -59,11 +75,27 @@
       align-items: center;
       font-size: 1.3rem;
       margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    .experience img {
+      height: 40px;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 12px;
     }
 
     .experience span {
       font-size: 0.9rem;
-      color: #333;
+      color: #444;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .experience p {
+      margin-top: 0.2rem;
+      font-size: 1rem;
+      color: #222;
     }
 
     @keyframes fadeIn {
@@ -89,6 +121,8 @@
     <p>Geography + Climate Tech | AI, Environmental Sensing & Strategy</p>
   </header>
 
+  <img src="profile.jpg" alt="Archie Jackson Headshot" class="profile-pic" />
+
   <section>
     <h2>Experience</h2>
 
@@ -112,3 +146,4 @@
   </section>
 </body>
 </html>
+
