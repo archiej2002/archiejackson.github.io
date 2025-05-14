@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archie Jackson | Portfolio</title>
+  <style>
+    :root {
+      --sand: #CBBD93;
+      --text: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--sand);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      animation: slideUp 1s ease-out;
+    }
+
+    .experience {
+      margin-bottom: 2rem;
+    }
+
+    .experience img {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .experience h3 {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .experience span {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Archie Jackson</h1>
+    <p>Geography + Climate Tech | AI, Environmental Sensing & Strategy</p>
+  </header>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="experience">
+      <h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon Logo">Amazon – Operations Intern</h3>
+      <span>Summer 2025</span>
+      <p>Worked on process optimization at a high-volume delivery site, applying systems thinking and logistics efficiency to improve daily performance metrics across shifts.</p>
+    </div>
+
+    <div class="experience">
+      <h3><img src="vision iv skydeck photo.jpg" alt="Vision IV">Vision IV (SkyDeck) – Strategy Intern</h3>
+      <span>Spring 2025</span>
+      <p>Contributed to market analysis and investor readiness for synthetic diamond sensor technologies in medical and aerospace applications.</p>
+    </div>
+
+    <div class="experience">
+      <h3><img src="images/berkeley_lab_logo.png" alt="Berkeley Lab">UC Berkeley – Research Assistant, Geo-Sensor Networks Lab</h3>
+      <span>2025–Present</span>
+      <p>Developing optimization strategies for wildfire and flood sensor networks, with a focus on adaptive communication protocols and AI training for climate hazard detection.</p>
+    </div>
+  </section>
+</body>
+</html>
